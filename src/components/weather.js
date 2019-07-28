@@ -1,9 +1,9 @@
-import React from "react"; // обязательно прописать - подключаем React 
+import React from "react"; // обязательно прописать - подключаем React
 
 
 const Weather = (props) => {
     return (
-        <div>
+        <div className="infoWeath">
             {props.city &&
                 <div>
                     <p>Ihr Wetter für heute in  {props.city}, {props.country}.</p>
@@ -13,7 +13,7 @@ const Weather = (props) => {
                     <p>Der Sonnenuntergang ist um {props.sunset}.</p>
                 </div>
             }
-            <p>{props.error}</p>
+            <p className="Error">{props.error}</p>
         </div>
     )
 }
